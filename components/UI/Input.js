@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-export default function CompanyTab() {
+export default function Input() {
   return (
     <View>
-      <Text>CompanyTab</Text>
+      <Text>Input</Text>
     </View>
   )
 }
