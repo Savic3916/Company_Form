@@ -9,12 +9,14 @@ export default function Input({prop}) {
 
 const styles = StyleSheet.create({
   textInput: {
-    padding: 6,
+    flex:1,
+    padding: 8,
     borderRadius: 6,
     backgroundColor: 'white',
     borderWidth: 1,
     borderColor: 'black',
     fontSize: 12,
     marginTop: 5,
+    marginHorizontal: 5,
   }
 })
