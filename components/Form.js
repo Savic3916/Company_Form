@@ -42,7 +42,9 @@ export default function Form() {
             <PressableTab tab='Team' style={myTabStyleTeam} onPress={() => setTab('team')}/>
             <PressableTab tab='Mobile apps' style={myTabStyleMobile} onPress={() => setTab('mobile')}/>
         </View>
-        {content}
+        <View style={styles.contentView}>
+            {content}
+        </View>
     </View>
   )
 }
@@ -103,4 +105,8 @@ const styles = StyleSheet.create({
         paddingBottom: 8,
         width: '25%',
     },
+    contentView: {
+        marginTop: 20,
+        marginBottom: 10,
+    }
 })

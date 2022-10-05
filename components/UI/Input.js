@@ -1,4 +1,4 @@
-import { StyleSheet, TextInput } from 'react-native'
+import { StyleSheet, View, TextInput } from 'react-native'
 import React from 'react'
 
 export default function Input({prop}) {
@@ -9,14 +9,13 @@ export default function Input({prop}) {
 
 const styles = StyleSheet.create({
   textInput: {
-    flex:1,
-    padding: 8,
+    padding: 3,
     borderRadius: 6,
     backgroundColor: 'white',
     borderWidth: 1,
     borderColor: 'black',
-    fontSize: 12,
-    marginTop: 5,
+    fontSize: 13,
+    marginVertical: 5,
     marginHorizontal: 5,
   }
 })
