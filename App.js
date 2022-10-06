@@ -1,18 +1,23 @@
-import { StyleSheet, Text, View, ImageBackground } from 'react-native'
-import React from 'react'
-import Form from './components/Form'
+import { StyleSheet, View, ImageBackground } from 'react-native'
+import React from 'react';
+
+import Form from './components/Form';
+import { Provider } from 'react-redux';
+import { store } from './store/redux/store';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-        <ImageBackground 
-              source={require('./assets/image/background.jpg')} 
-              resizeMode={'cover'} 
-              style={styles.imageBackground}
-        >
-            <Form/>
-        </ImageBackground>
-    </View>
+    <Provider store={store}>
+        <View style={styles.container}>
+            <ImageBackground 
+                  source={require('./assets/image/background.jpg')} 
+                  resizeMode={'cover'} 
+                  style={styles.imageBackground}
+            >
+                <Form/>
+            </ImageBackground>
+        </View>
+    </Provider>
   )
 }
 

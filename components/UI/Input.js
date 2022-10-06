@@ -1,9 +1,9 @@
 import { StyleSheet, View, TextInput } from 'react-native'
 import React from 'react'
 
-export default function Input({prop}) {
+export default function Input({prop, invalid}) {
   return (
-      <TextInput style={styles.textInput} {...prop}/>
+      <TextInput style={[styles.textInput, invalid && styles.invalid]} {...prop}/>
   )
 }
 
@@ -17,5 +17,8 @@ const styles = StyleSheet.create({
     fontSize: 13,
     marginVertical: 5,
     marginHorizontal: 5,
+  },
+  invalid: {
+    backgroundColor: '#FFCCCB'
   }
 })
